@@ -71,5 +71,13 @@ class Student
     DB[:conn].execute(sql)
   end
 
+  def self.all
+    sql = <<-SQL
+    SQL
+
+    DB[:conn].execute(sql)
+
+  end
+
 
 end
