@@ -103,7 +103,6 @@ class Student
 
     row = DB[:conn].execute(sql).first
     new_from_db(row)
-
   end
 
 
