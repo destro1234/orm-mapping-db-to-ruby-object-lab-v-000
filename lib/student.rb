@@ -77,9 +77,11 @@ class Student
     FROM students
     SQL
 
-    DB[:conn].execute(sql)
-
-  end
+    table = DB[:conn].execute(sql)
+    
+    table.map {|row|
+    new_from_db(row)}
+    end
 
 
 end
